@@ -265,7 +265,7 @@
 
     <name>UpcEx-Api</name>
     <description>Parent Maven project for UpcEx-Api modules</description>
-    <url>http://cwiki.ossez.com</url>
+    <url>https://www.cwiki.us/</url>
     <inceptionYear>2016</inceptionYear>
     <licenses>
         <license>
@@ -276,7 +276,7 @@
     </licenses>
     <developers>
         <developer>
-            <name>OssezTec, Inc Authors</name>
+            <name>NORTH TECOM, LLC</name>
         </developer>
     </developers>
 
