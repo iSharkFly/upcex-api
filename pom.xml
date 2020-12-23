@@ -44,6 +44,7 @@
         <version>${slf4j.version}</version>
         <scope>runtime</scope>
       </dependency>
+    </dependencies>
   </dependencyManagement>
 
   <modules>
@@ -72,14 +73,6 @@
         <artifactId>maven-release-plugin</artifactId>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>clirr-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.rat</groupId>
-        <artifactId>apache-rat-plugin</artifactId>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
       </plugin>
@@ -90,33 +83,7 @@
     </plugins>
     <pluginManagement>
       <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-enforcer-plugin</artifactId>
-          <version>1.4.1</version>
-          <executions>
-            <execution>
-              <id>enforce</id>
-              <configuration>
-                <rules>
-                  <requireModuleConvergence />
-                  <requirePluginVersions />
-                  <requireUpperBoundDeps />
-                  <dependencyConvergence />
-                  <requireMavenVersion>
-                    <version>${maven.version.min}</version>
-                  </requireMavenVersion>
-                  <requireJavaVersion>
-                    <version>${java.version}</version>
-                  </requireJavaVersion>
-                </rules>
-              </configuration>
-              <goals>
-                <goal>enforce</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -260,6 +227,7 @@
           <artifactId>maven-jxr-plugin</artifactId>
           <version>2.5</version>
         </plugin>
+      </plugins>
     </pluginManagement>
   </build>
 
